@@ -1,0 +1,9 @@
+rules:
+- id: autofix
+  message: |
+    Autofix demo
+  severity: INFO
+  languages:
+  - python
+  fix: safe($ARG1, $ARG2, $ARG3)
+  pattern: dangerous_function_call($ARG1, $ARG2, $ARG3)

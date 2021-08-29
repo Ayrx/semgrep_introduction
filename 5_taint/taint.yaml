@@ -1,0 +1,14 @@
+rules:
+- id: taint-analysis
+  message: |
+    Simple taint analysis example
+  severity: WARNING
+  languages:
+  - python
+  mode: taint
+  pattern-sources:
+    - pattern: get_user_input(...)
+  pattern-sinks:
+  - pattern: output(...)
+  pattern-sanitizers:
+    - pattern: sanitize_user_input(...)

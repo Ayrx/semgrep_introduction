@@ -1,0 +1,8 @@
+rules:
+- id: subprocess
+  message: |
+    Detected the use subprocess with shell=True
+  severity: WARNING
+  languages:
+  - python
+  pattern: subprocess.run(..., shell=True, ...)

@@ -1,0 +1,7 @@
+rules:
+- id: hello-world
+  message: Baby's first Semgrep rule
+  languages: [python]
+  severity: INFO
+  # pattern: print(...)
+  pattern: print("...")

@@ -1,0 +1,8 @@
+rules:
+- id: os-command-injection
+  message: |
+    Detected the use of functions that could result in command injection vulnerabilities.
+  severity: WARNING
+  languages:
+  - python
+  pattern: os.system(...)
